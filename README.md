@@ -1,4 +1,4 @@
-# Project1
+# Project1 Exploring Kibana
 project 1 submission
 
 
@@ -127,6 +127,7 @@ _TODO: Answer the following questions to fill in the blanks:_
 Updating the etc/ansible/hosts file and adding the elk ip info under its own section is the first step. Afterward running a .YML playbook with the matching hosts of elk will only apply to that machine.
 - _Which URL do you navigate to in order to check that the ELK server is running?
 http://20.85.245.227:5601/app/kibana
+(public IP keeps changing)
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
 
@@ -153,13 +154,19 @@ In the last 2 days, what percentage of visitors received 404 errors? How about 5
 503-100%
 404-0%
 In the last 7 days, what country produced the majority of the traffic on the website?
-
+china
 
 Of the traffic that's coming from that country, what time of day had the highest amount of activity?
 
+12 noon
 
 List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
 
+gz: Archive file compressed by gzip
+css: Cascading sheet file used to format contents of a web page
+zip: Used to compress one or more files into one location
+deb: A Unix archive with 2 bzipped or gzipped archives, one has installer control data and other installable data.
+rpm: Used for installing programs on linux
 
 
 
@@ -168,30 +175,39 @@ Now that you have a feel for the data, Let's dive a bit deeper. Look at the char
 Locate the time frame in the last 7 days with the most amount of bytes (activity).
 In your own words, is there anything that seems potentially strange about this activity?
 
-
+Only one visitor is generating a higher than normal amount of activity
 
 Filter the data by this event.
 
-What is the timestamp for this event?
-What kind of file was downloaded?
-From what country did this activity originate?
-What HTTP response codes were encountered by this visitor?
+What is the timestamp for this event? 22:55
+What kind of file was downloaded? RPM
+From what country did this activity originate? India
+What HTTP response codes were encountered by this visitor? 200
 
 
 
 Switch to the Kibana Discover page to see more details about this activity.
 
-What is the source IP address of this activity?
-What are the geo coordinates of this activity?
-What OS was the source machine running?
-What is the full URL that was accessed?
-From what website did the visitor's traffic originate?
+What is the source IP address of this activity? 35.143.166.159
+What are the geo coordinates of this activity? {
+  "lat": 43.34121,
+  "lon": -73.6103075
+}
+What OS was the source machine running? Win 8
+What is the full URL that was accessed? https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-6.3.2-i686.rpm
+From what website did the visitor's traffic originate? http://facebook.com/success/jay-c-buckey
 
 
 
 Finish your investigation with a short overview of your insights.
 
-What do you think the user was doing?
-Was the file they downloaded malicious? If not, what is the file used for?
-Is there anything that seems suspicious about this activity?
-Is any of the traffic you inspected potentially outside of compliance guidlines?
+What do you think the user was doing? It appears to be a program download of metricbeat
+Was the file they downloaded malicious? If not, what is the file used for? files from that source are usually not malicous but it depends on intent, and it could be for a update.
+Is there anything that seems suspicious about this activity? not right away
+Is any of the traffic you inspected potentially outside of compliance guidlines? Usually this type of file is not associated with facebook
+
+
+
+
+
+
