@@ -1,3 +1,7 @@
+
+
+
+
 # Project1 Exploring Kibana
 project 1 submission
 
@@ -209,5 +213,19 @@ Is any of the traffic you inspected potentially outside of compliance guidlines?
 
 
 
+
+![elk day 1 kibana](https://user-images.githubusercontent.com/79461915/120697237-794c5800-c47b-11eb-889e-bf9b35168121.PNG)
+![elk day 2 filebeat proof kibana](https://user-images.githubusercontent.com/79461915/120697476-c3353e00-c47b-11eb-93d0-834c02ac3f1e.PNG)![elk day 2 metric beat proof](https://user-images.githubusercontent.com/79461915/120697520-d3e5b400-c47b-11eb-89af-a445a32454bb.PNG)
+
+
+
+
+INTERVIEW PAGE ESSAYS TOTAL 3
+
+[Containers.docx](https://github.com/SoulRebel484/Project1/files/6594257/Containers.docx)
+
+[Challenges of Collecting Large Amounts of Log Data.docx](https://github.com/SoulRebel484/Project1/files/6594266/Challenges.of.Collecting.Large.Amounts.of.Log.Data.docx)
+
+[Escalating Security Events.docx](https://github.com/SoulRebel484/Project1/files/6594267/Escalating.Security.Events.docx)
 
 
